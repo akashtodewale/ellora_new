@@ -31,15 +31,15 @@ public class BookInpersonAppt extends BaseClass {
 		QuickApptObjects quickApptObjects = new QuickApptObjects(driver);
 		
 		quickApptObjects.getUsersMenu().click();
-		quickApptObjects.fName().sendKeys("jen" +Keys.ENTER);
+		quickApptObjects.getFNameInput().sendKeys("jen" +Keys.ENTER);
         System.out.println("test");
     	
-		quickApptObjects.clickquickicon().click();
+		quickApptObjects.getQuickApptIcon().click();
 		wait.wait(2);
-		quickApptObjects.InPersonAppt().click();
-		quickApptObjects.Confirm.click();
+		quickApptObjects.getInPersonApptButton().click();
+		((WebElement) quickApptObjects.confirmButton).click();
 		
-		if(quickApptObjects.CorfirmModal.isDisplayed()) {
+		if(((WebElement) quickApptObjects.confirmModal).isDisplayed()) {
 			
 			//quickApptObjects.ButtonContinue().click();
 		}
