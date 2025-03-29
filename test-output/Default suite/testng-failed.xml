@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ellora.testCases.BookInpersonAppt">
+      <class name="com.ellora.testCases.DocumentUploadTest">
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="bookInpersonAppt"/>
+          <include name="documentUploadTest"/>
         </methods>
-      </class> <!-- com.ellora.testCases.BookInpersonAppt -->
+      </class> <!-- com.ellora.testCases.DocumentUploadTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

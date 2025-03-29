@@ -1,14 +1,13 @@
 package com.ellora.testCases;
 
 import java.time.Duration;
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.ellora.Utilities.*;
 import com.ellora.pageObjects.DocumentUploadPage;
+
 
 
 public class DocumentUploadTest extends BaseClass{
