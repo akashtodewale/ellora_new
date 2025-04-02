@@ -50,7 +50,7 @@ public class BaseClass {
 	        //String browser = System.getProperty("browser", "Chrome"); // Default browser is Chrome
 	        driver = initializeDriver(prop.getProperty("browser"));
 	        driver.manage().window().maximize();
-	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	        driver.get(prop.getProperty("url"));
 	        LoginPage loginPage = new LoginPage(driver);
 
@@ -71,7 +71,7 @@ public class BaseClass {
 			return null;
 		}
 
-		public WebDriver initializeDriver(String browser) {
+		public static WebDriver initializeDriver(String browser) {
 	        switch (browser.toLowerCase()) {
 	            case "chrome":
 	                WebDriverManager.chromedriver().setup();

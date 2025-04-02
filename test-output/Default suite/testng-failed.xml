@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ellora.testCases.Notification_Setting">
+      <class name="com.ellora.testCases.ReportManage_appt_note">
         <methods>
-          <include name="setUp"/>
-          <include name="Notification_Setting_Test"/>
+          <include name="testReportsGeneration"/>
         </methods>
-      </class> <!-- com.ellora.testCases.Notification_Setting -->
+      </class> <!-- com.ellora.testCases.ReportManage_appt_note -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
