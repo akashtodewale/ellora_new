@@ -1,18 +1,28 @@
 package com.ellora.pageObjects;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import com.ellora.Utilities.WaitUtil;
 public class ReportsPage {
-    WebDriver driver;
+   private WebDriver driver;
   
-    // Locators
+    public ReportsPage(WebDriver driver) {
+	super();
+	this.driver = driver;
+}
+
+	// Locators
     private By reportsMenu = By.xpath("//a[normalize-space()='Reports']");
     private By reportDropdown = By.xpath("//div[@data-tooltip=\"Select Report\"]");
     private By searchReport = By.xpath("//div[@id=\"select_report_name\"]//input[@class=\"vscomp-search-input\"]");
     private By includeInactiveButton = By.xpath("//input[@id=\"report_inactive_provider\"]");
-    private By providerDropdown = By.xpath("//div[contains(text(),'Select Provider')]");
+    private By providerDropdown = By.xpath("//div[contains(text(),'Select Provider')]/parent::div/parent::div");
     private By searchProvider = By.xpath("//div[@id=\"report_select_providers\"]//input[@class=\"vscomp-search-input\"]");
     private By facilityDropdown = By.xpath("//div[contains(text(),'Select Facility')]");
     private By searchFacility = By.xpath("//div[@id=\"report_select_facilities\"]//input[@class=\"vscomp-search-input\"]");
@@ -25,9 +35,7 @@ public class ReportsPage {
     private By emailSuccessMessage = By.xpath("//div[@class='toast-body fw-normal' and normalize-space()=\"Request for exporting report is accepted. You should receive an email once the report is ready!\"]");
 
     // Constructor
-    public ReportsPage(WebDriver driver) {
-        this.driver = driver; 
-    }
+  
 
     // Methods
     public void openReports() {
@@ -40,16 +48,21 @@ public class ReportsPage {
         driver.findElement(searchReport).sendKeys(Keys.ENTER);
     }
 
-    public void filterReport(String provider, String facility, String serviceDate) {
+    public void filterReport(String provider, String facility, String serviceDate) throws InterruptedException {
+    	 Actions actions = new Actions(driver);
         driver.findElement(includeInactiveButton).click();
-        
+       
         driver.findElement(providerDropdown).click();
+        WaitUtil.waitForElementToBeClickable(driver, By.xpath("//div[contains(text(),'Select Provider')]/parent::div/parent::div"), 5);
         driver.findElement(searchProvider).sendKeys(provider);
+        WaitUtil.waitForElementToBeClickable(driver, By.xpath("//div[@id=\"report_select_providers\"]//input[@class=\"vscomp-search-input\"]"), 5);
+        actions.sendKeys(Keys.ENTER).perform();
         driver.findElement(searchProvider).sendKeys(Keys.ENTER);
 
+       
         driver.findElement(facilityDropdown).click();
         driver.findElement(searchFacility).sendKeys(facility);
-        driver.findElement(searchFacility).sendKeys(Keys.ENTER);
+        actions.sendKeys(Keys.ENTER).perform();
 
         driver.findElement(clientDropdown).click();
         driver.findElement(selectAllClients).click();

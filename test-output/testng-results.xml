@@ -2,20 +2,48 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-02T19:06:53 IST" name="Default suite" finished-at="2025-04-02T19:07:01 IST" duration-ms="7898">
+  <suite started-at="2025-04-03T18:58:00 IST" name="Default suite" finished-at="2025-04-03T18:58:48 IST" duration-ms="47729">
     <groups>
     </groups>
-    <test started-at="2025-04-02T19:06:53 IST" name="Default test" finished-at="2025-04-02T19:07:01 IST" duration-ms="7898">
+    <test started-at="2025-04-03T18:58:00 IST" name="Default test" finished-at="2025-04-03T18:58:48 IST" duration-ms="47729">
       <class name="com.ellora.testCases.ReportManage_appt_note">
-        <test-method signature="testReportsGeneration()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@510f3d34]" started-at="2025-04-02T19:06:54 IST" name="testReportsGeneration" finished-at="2025-04-02T19:07:01 IST" duration-ms="7842" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="testReportsGeneration()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@7817fd62]" started-at="2025-04-03T18:58:00 IST" name="testReportsGeneration" finished-at="2025-04-03T18:58:48 IST" duration-ms="47649" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null]]>
+              <![CDATA[element click intercepted: Element <span class="vscomp-toggle-all-button">...</span> is not clickable at point (303, 316). Other element would receive the click: <div class="vscomp-value">...</div>
+  (Session info: chrome=134.0.6998.178)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c19d4e837a252553859499fbbdbc6e2, clickElement {id=f.92A7850EAF8FDFC0D987AA8E790E584D.d.47134DCF5F676C02A5F98A8C9CB2537A.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61875/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3c19d4e837a252553859499fbbdbc6e2)] -> xpath: (//span[@class="vscomp-toggle-all-button"])[2]]
+Session ID: 3c19d4e837a252553859499fbbdbc6e2]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "this.driver" is null
-at com.ellora.pageObjects.ReportsPage.openReports(ReportsPage.java:34)
-at com.ellora.testCases.ReportManage_appt_note.testReportsGeneration(ReportManage_appt_note.java:35)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="vscomp-toggle-all-button">...</span> is not clickable at point (303, 316). Other element would receive the click: <div class="vscomp-value">...</div>
+  (Session info: chrome=134.0.6998.178)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3c19d4e837a252553859499fbbdbc6e2, clickElement {id=f.92A7850EAF8FDFC0D987AA8E790E584D.d.47134DCF5F676C02A5F98A8C9CB2537A.e.166}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61875/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (3c19d4e837a252553859499fbbdbc6e2)] -> xpath: (//span[@class="vscomp-toggle-all-button"])[2]]
+Session ID: 3c19d4e837a252553859499fbbdbc6e2
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at com.ellora.pageObjects.ReportsPage.filterReport(ReportsPage.java:68)
+at com.ellora.testCases.ReportManage_appt_note.testReportsGeneration(ReportManage_appt_note.java:39)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -44,7 +72,7 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testReportsGeneration -->
