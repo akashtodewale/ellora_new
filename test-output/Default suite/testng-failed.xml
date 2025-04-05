@@ -5,6 +5,8 @@
     <classes>
       <class name="com.ellora.testCases.ReportManage_appt_note">
         <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
           <include name="testReportsGeneration"/>
         </methods>
       </class> <!-- com.ellora.testCases.ReportManage_appt_note -->
