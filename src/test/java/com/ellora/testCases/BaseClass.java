@@ -27,7 +27,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseClass {
 
-	    public WebDriver driver;
+	    public static WebDriver driver;
 	    public Properties prop;
 	    
 	    public BaseClass() {
@@ -86,7 +86,10 @@ public class BaseClass {
 	                throw new IllegalArgumentException("Unsupported browser: " + browser);
 	        }
 	    }
-	    
+		  
+		public static WebDriver getDriver() {
+		        return driver;
+		    }
 	  
     @AfterMethod
 	    public void tearDown() {
