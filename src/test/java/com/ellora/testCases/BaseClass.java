@@ -87,15 +87,16 @@ public class BaseClass {
 	        }
 	    }
 		  
-		public static WebDriver getDriver() {
+		public static  WebDriver getDriver() {
 		        return driver;
 		    }
-	  
+		
     @AfterMethod
 	    public void tearDown() {
         if (driver != null) {
         	try {
 				Thread.sleep(3000);
+				driver.close();
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
