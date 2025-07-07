@@ -20,7 +20,6 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
-import com.ellora.Utilities.WaitUtil;
 import com.ellora.pageObjects.LoginPage;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -95,8 +94,12 @@ public class BaseClass {
 	    public void tearDown() {
         if (driver != null) {
         	try {
+
 				Thread.sleep(3000);
 				driver.close();
+
+				Thread.sleep(3000);
+
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
