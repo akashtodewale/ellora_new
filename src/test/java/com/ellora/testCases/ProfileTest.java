@@ -12,7 +12,8 @@ public class ProfileTest extends BaseClass{
 
     @Test
     public void testUpdateProfileFields() {
-    	
+		loginByKey("doctor");
+
     	profilePage = new ProfilePage(driver);
        	driver.findElement(By.xpath("//span[@class='bg-primary text-uppercase text-white fw-600 auth-initials']")).click();
        	driver.findElement(By.xpath("//a[normalize-space()='Profile']")).click();

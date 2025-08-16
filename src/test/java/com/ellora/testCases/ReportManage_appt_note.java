@@ -5,6 +5,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.ellora.pageObjects.LoginPage;
@@ -12,9 +13,17 @@ import com.ellora.pageObjects.ReportsPage;
 
 public class ReportManage_appt_note extends BaseClass{
 	//public WebDriver driver;
+	ReportsPage reportspage;
+	
+	  @BeforeClass
+	    public void setUpPageObjects() {
+	        reportspage = new ReportsPage(driver);  // ✅ Initialize here
+	    }
 
+	
 	@Test
 	public void testReportsGeneration() {
+		loginByKey("doctor");
 
 //		driver = BaseClass.initializeDriver("chrome");
 //		driver.manage().window().maximize();
@@ -30,26 +39,27 @@ public class ReportManage_appt_note extends BaseClass{
 //		loginPage.clickLoginButton();
 
 		// Open Reports
-		ReportsPage.openReports();
+		reportspage.openReports();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		// Select Report
-		ReportsPage.selectReport("Brief Note Report");
+		reportspage.selectReport("Brief Note Report");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		// Apply Filters
 		try {
-			ReportsPage.filterReport("Sam Doc", "Omni", "Jan 01, 2025 to Mar 10, 2025");
+			reportspage.filterReport("Sam Doc", "Omni", "Jan 01, 2025 to Mar 10, 2025");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		// Generate Report
-		ReportsPage.generateReport();
+		reportspage.generateReport();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		// Send Email Report
-		ReportsPage.sendEmailReport("akash.todewale@bostonbyte.com");
+		reportspage.sendEmailReport("akash.todewale@bostonbyte.com");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 		// Verify Email Sent
-		Assert.assertTrue(ReportsPage.isEmailSent(), "Email was not sent successfully!");
-	}
+		Assert.assertTrue(reportspage.isEmailSent(), "Email was not sent successfully!");
+	
+}
 }

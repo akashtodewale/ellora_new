@@ -17,6 +17,7 @@ public class ProfileStepDefinitions extends BaseClass {
 	  @Given("User is logged into the application")
 	    public void user_is_logged_into_the_application() {
 	        // Initialize WebDriver from BaseClass
+			loginByKey("doctor");
 	        driver = BaseClass.getDriver();
 	        profilePage = new ProfilePage(driver);
 	    }

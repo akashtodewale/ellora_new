@@ -22,7 +22,8 @@ public class BookInpersonAppt extends BaseClass {
 	
 	public void bookInpersonAppt() throws InterruptedException {
 		
-		
+		loginByKey("doctor");
+
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 
 		 

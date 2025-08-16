@@ -16,6 +16,7 @@ public class DocumentStepDefinitions extends BaseClass {
 
     @Given("I am logged into the application")
     public void i_am_logged_into_the_application() {
+		loginByKey("doctor");
         // Assume login is handled in hooks or globally
         assertTrue(driver != null);
     }

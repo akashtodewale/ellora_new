@@ -8,10 +8,15 @@ import com.ellora.pageObjects.Provider_settings_page;
 
 public class Notification_Setting extends BaseClass {
 	
+	
+	
 	@Test
 	public void Notification_Setting_Test() {
 		
+		loginByKey("doctor");
+		
         Provider_settings_page settingsPage = new Provider_settings_page(driver);
+        
         settingsPage.navigateToSettings();
         
         settingsPage.GeneralSettingsTest();

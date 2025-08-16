@@ -14,6 +14,8 @@ public class DocumentUploadTest extends BaseClass{
 
     @Test
     public void documentUploadTest()  {
+		loginByKey("doctor");
+
         // Navigate to Clients
         driver.findElement(DocumentUploadPage.CLIENTS_TAB).click();
 

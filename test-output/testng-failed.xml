@@ -7,27 +7,13 @@
   </listeners>
   <test thread-count="1" parallel="tests" name="Full Tests(failed)">
     <classes>
-      <class name="com.ellora.testCases.DocumentUploadTest">
+      <class name="com.ellora.testCases.Notification_Setting">
         <methods>
           <include name="setUp"/>
-          <include name="documentUploadTest"/>
+          <include name="Notification_Setting_Test"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ellora.testCases.DocumentUploadTest -->
-      <class name="com.ellora.testCases.BookInpersonAppt">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="bookInpersonAppt"/>
-        </methods>
-      </class> <!-- com.ellora.testCases.BookInpersonAppt -->
-      <class name="com.ellora.testCases.ReportManage_appt_note">
-        <methods>
-          <include name="setUp"/>
-          <include name="tearDown"/>
-          <include name="testReportsGeneration"/>
-        </methods>
-      </class> <!-- com.ellora.testCases.ReportManage_appt_note -->
+      </class> <!-- com.ellora.testCases.Notification_Setting -->
       <class name="com.ellora.testCases.ProfileTest">
         <methods>
           <include name="setUp"/>
@@ -35,6 +21,35 @@
           <include name="testUpdateProfileFields"/>
         </methods>
       </class> <!-- com.ellora.testCases.ProfileTest -->
+      <class name="com.ellora.testCases.ReportManage_appt_note">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="testReportsGeneration"/>
+          <include name="setUpPageObjects"/>
+        </methods>
+      </class> <!-- com.ellora.testCases.ReportManage_appt_note -->
+      <class name="com.ellora.testCases.BookInpersonAppt">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="bookInpersonAppt"/>
+        </methods>
+      </class> <!-- com.ellora.testCases.BookInpersonAppt -->
+      <class name="com.ellora.testCases.DocumentUploadTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="documentUploadTest"/>
+        </methods>
+      </class> <!-- com.ellora.testCases.DocumentUploadTest -->
+      <class name="com.ellora.testCases.BookAudioAppointmentTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="bookAudioAppointmentTest"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.ellora.testCases.BookAudioAppointmentTest -->
     </classes>
   </test> <!-- Full Tests(failed) -->
 </suite> <!-- Failed suite [FullSuite] -->

@@ -10,11 +10,11 @@ import org.openqa.selenium.interactions.Actions;
 
 import com.ellora.Utilities.WaitUtil;
 public class ReportsPage {
-   public static WebDriver driver;
+	  WebDriver driver;
   
     public ReportsPage(WebDriver driver) {
-	super();
-	ReportsPage.driver = driver;
+	//super();
+        this.driver = driver;
     }
 
 	// Locators
@@ -38,17 +38,17 @@ public class ReportsPage {
   
 
     // Methods
-    public static void openReports() {
+    public void openReports() {
         driver.findElement(reportsMenu).click();
     }
 
-    public static void selectReport(String reportName) {
+    public  void selectReport(String reportName) {
         driver.findElement(reportDropdown).click();
         driver.findElement(searchReport).sendKeys(reportName);
         driver.findElement(searchReport).sendKeys(Keys.ENTER);
     }
 
-    public static void filterReport(String provider, String facility, String serviceDate) throws InterruptedException {
+    public  void filterReport(String provider, String facility, String serviceDate) throws InterruptedException {
     	 Actions actions = new Actions(driver);
         driver.findElement(includeInactiveButton).click();
        
@@ -73,18 +73,18 @@ public class ReportsPage {
         driver.findElement(serviceDateField).sendKeys(Keys.ENTER);
     }
 
-    public static void generateReport() {
+    public  void generateReport() {
         driver.findElement(getReportButton).click();
     }
 
-    public static void sendEmailReport(String email) {
+    public  void sendEmailReport(String email) {
         if (driver.findElement(sendEmailField).isDisplayed()) {
             driver.findElement(sendEmailField).sendKeys(email);
             driver.findElement(sendEmailButton).click();
         }
     }
 
-    public static boolean isEmailSent() {
+    public  boolean isEmailSent() {
         return driver.findElement(emailSuccessMessage).isDisplayed();
     }
     
