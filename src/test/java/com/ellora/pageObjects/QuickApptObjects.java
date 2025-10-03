@@ -10,13 +10,13 @@ public class QuickApptObjects {
     // Locators as By elements (Recommended for better flexibility)
     private By usersMenu = By.xpath("//a[normalize-space()='Clients']");
     private By quickApptIcon = By.xpath("//a[@title='Schedule Appointment' or @class='mr-3']/em");
-    public By confirmButton = By.id("book_quick_app_btn");
-    private By fNameInput = By.id("user_fname");
+    private By confirmButton = By.id("book_quick_app_btn");
+    private By fNameInput = By.id("search_first_name");
     private By inPersonApptButton = By.id("apt-type-3");
 
     // Optional/Commented locators if you need to use them later
      public By confirmModal = By.className("CorfirmModal");
-    // private By buttonContinue = By.className("swal-button swal-button--confirm");
+    private By buttonContinue = By.className("swal-button swal-button--confirm");
 
     // Constructor
     public QuickApptObjects(WebDriver driver) {
@@ -49,8 +49,8 @@ public class QuickApptObjects {
        return driver.findElement(confirmModal);
      }
 
-    // public WebElement getButtonContinue() {
-    //     return driver.findElement(buttonContinue);
-    // }
+    public WebElement getButtonContinue() {
+        return driver.findElement(buttonContinue);
+     }
 
 }

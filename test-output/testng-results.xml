@@ -2,43 +2,96 @@
 <testng-results ignored="0" total="7" passed="1" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T21:27:09 IST" name="FullSuite" finished-at="2025-07-30T21:42:03 IST" duration-ms="894629">
+  <suite started-at="2025-10-03T18:35:52 IST" name="FullSuite" finished-at="2025-10-03T18:38:21 IST" duration-ms="148677">
     <groups>
     </groups>
-    <test started-at="2025-07-30T21:27:09 IST" name="Full Tests" finished-at="2025-07-30T21:42:03 IST" duration-ms="894629">
+    <test started-at="2025-10-03T18:35:52 IST" name="Full Tests" finished-at="2025-10-03T18:38:21 IST" duration-ms="148677">
       <class name="com.ellora.testCases.BookInpersonAppt">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.BookInpersonAppt@2a8448fa]" started-at="2025-07-30T21:29:51 IST" name="setUp" finished-at="2025-07-30T21:29:55 IST" duration-ms="4031" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.BookInpersonAppt@33c911a1]" started-at="2025-10-03T18:37:38 IST" name="setUp" finished-at="2025-10-03T18:37:53 IST" duration-ms="14686" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="bookInpersonAppt()[pri:0, instance:com.ellora.testCases.BookInpersonAppt@2a8448fa]" started-at="2025-07-30T21:29:55 IST" name="bookInpersonAppt" finished-at="2025-07-30T21:30:15 IST" duration-ms="20205" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="bookInpersonAppt()[pri:0, instance:com.ellora.testCases.BookInpersonAppt@33c911a1]" started-at="2025-10-03T18:37:53 IST" name="bookInpersonAppt" finished-at="2025-10-03T18:37:59 IST" duration-ms="5848" status="FAIL">
+          <exception class="org.openqa.selenium.InvalidSelectorException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#user_fname"}
-  (Session info: chrome=136.0.7103.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+              <![CDATA[Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d2b0167976202883db1d81b836a4cd5, findElement {using=id, value=user_fname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d2b0167976202883db1d81b836a4cd5]]>
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#user_fname"}
+              <![CDATA[org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: driver.version: unknown
+at org.openqa.selenium.By$ByClassName.<init>(By.java:309)
+at org.openqa.selenium.By.className(By.java:100)
+at com.ellora.pageObjects.QuickApptObjects.<init>(QuickApptObjects.java:19)
+at com.ellora.testCases.BookInpersonAppt.bookInpersonAppt(BookInpersonAppt.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookInpersonAppt -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.BookInpersonAppt@33c911a1]" started-at="2025-10-03T18:37:59 IST" name="tearDown" finished-at="2025-10-03T18:38:03 IST" duration-ms="3512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ellora.testCases.BookInpersonAppt -->
+      <class name="com.ellora.testCases.DocumentUploadTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.DocumentUploadTest@24269709]" started-at="2025-10-03T18:35:52 IST" name="setUp" finished-at="2025-10-03T18:36:02 IST" duration-ms="9857" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="documentUploadTest()[pri:0, instance:com.ellora.testCases.DocumentUploadTest@24269709]" started-at="2025-10-03T18:36:02 IST" name="documentUploadTest" finished-at="2025-10-03T18:36:14 IST" duration-ms="11618" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#search_first_name"}
   (Session info: chrome=136.0.7103.114)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d2b0167976202883db1d81b836a4cd5, findElement {using=id, value=user_fname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d2b0167976202883db1d81b836a4cd5
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [fe324f2988e8b0fb498b5bca5c24a71a, findElement {value=search_first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53372/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe324f2988e8b0fb498b5bca5c24a71a]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search_first_name"}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fe324f2988e8b0fb498b5bca5c24a71a, findElement {value=search_first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53372/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe324f2988e8b0fb498b5bca5c24a71a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -50,12 +103,9 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at com.ellora.pageObjects.QuickApptObjects.getFNameInput(QuickApptObjects.java:40)
-at com.ellora.testCases.BookInpersonAppt.bookInpersonAppt(BookInpersonAppt.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at com.ellora.testCases.DocumentUploadTest.documentUploadTest(DocumentUploadTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -64,109 +114,58 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookInpersonAppt -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.BookInpersonAppt@2a8448fa]" started-at="2025-07-30T21:30:16 IST" name="tearDown" finished-at="2025-07-30T21:30:23 IST" duration-ms="6843" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.ellora.testCases.BookInpersonAppt -->
-      <class name="com.ellora.testCases.DocumentUploadTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.DocumentUploadTest@247310d0]" started-at="2025-07-30T21:27:10 IST" name="setUp" finished-at="2025-07-30T21:27:23 IST" duration-ms="13082" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="documentUploadTest()[pri:0, instance:com.ellora.testCases.DocumentUploadTest@247310d0]" started-at="2025-07-30T21:27:23 IST" name="documentUploadTest" finished-at="2025-07-30T21:27:45 IST" duration-ms="22264" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Document save failed! expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Document save failed! expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at com.ellora.testCases.DocumentUploadTest.documentUploadTest(DocumentUploadTest.java:50)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
         </test-method> <!-- documentUploadTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.DocumentUploadTest@247310d0]" started-at="2025-07-30T21:27:46 IST" name="tearDown" finished-at="2025-07-30T21:27:52 IST" duration-ms="6513" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.DocumentUploadTest@24269709]" started-at="2025-10-03T18:36:14 IST" name="tearDown" finished-at="2025-10-03T18:36:18 IST" duration-ms="3370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ellora.testCases.DocumentUploadTest -->
       <class name="com.ellora.testCases.ReportManage_appt_note">
-        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@740fb309]" started-at="2025-07-30T21:27:52 IST" name="setUpPageObjects" finished-at="2025-07-30T21:27:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@394df057]" started-at="2025-10-03T18:36:18 IST" name="setUpPageObjects" finished-at="2025-10-03T18:36:18 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPageObjects -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@740fb309]" started-at="2025-07-30T21:27:52 IST" name="setUp" finished-at="2025-07-30T21:28:05 IST" duration-ms="12856" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@394df057]" started-at="2025-10-03T18:36:18 IST" name="setUp" finished-at="2025-10-03T18:36:27 IST" duration-ms="9041" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testReportsGeneration()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@740fb309]" started-at="2025-07-30T21:28:05 IST" name="testReportsGeneration" finished-at="2025-07-30T21:28:12 IST" duration-ms="6383" status="FAIL">
+        <test-method signature="testReportsGeneration()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@394df057]" started-at="2025-10-03T18:36:27 IST" name="testReportsGeneration" finished-at="2025-10-03T18:36:31 IST" duration-ms="4160" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchSessionException">
             <message>
               <![CDATA[invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5ffc99408190ffe751e0ed6b3b2f6cc1, findElement {using=xpath, value=//a[normalize-space()='Reports']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ffc99408190ffe751e0ed6b3b2f6cc1]]>
+Command: [fe324f2988e8b0fb498b5bca5c24a71a, findElement {value=//a[normalize-space()='Reports'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53372/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe324f2988e8b0fb498b5bca5c24a71a]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5ffc99408190ffe751e0ed6b3b2f6cc1, findElement {using=xpath, value=//a[normalize-space()='Reports']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ffc99408190ffe751e0ed6b3b2f6cc1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [fe324f2988e8b0fb498b5bca5c24a71a, findElement {value=//a[normalize-space()='Reports'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53372/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe324f2988e8b0fb498b5bca5c24a71a
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -180,10 +179,8 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:3
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 at com.ellora.pageObjects.ReportsPage.openReports(ReportsPage.java:42)
 at com.ellora.testCases.ReportManage_appt_note.testReportsGeneration(ReportManage_appt_note.java:42)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -192,60 +189,56 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchSessionException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testReportsGeneration -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@740fb309]" started-at="2025-07-30T21:28:12 IST" name="tearDown" finished-at="2025-07-30T21:28:19 IST" duration-ms="6986" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.ReportManage_appt_note@394df057]" started-at="2025-10-03T18:36:32 IST" name="tearDown" finished-at="2025-10-03T18:36:35 IST" duration-ms="3356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ellora.testCases.ReportManage_appt_note -->
       <class name="com.ellora.testCases.Notification_Setting">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.Notification_Setting@6f204a1a]" started-at="2025-07-30T21:30:23 IST" name="setUp" finished-at="2025-07-30T21:30:28 IST" duration-ms="4895" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.Notification_Setting@75db5df9]" started-at="2025-10-03T18:38:03 IST" name="setUp" finished-at="2025-10-03T18:38:12 IST" duration-ms="9493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Notification_Setting_Test()[pri:0, instance:com.ellora.testCases.Notification_Setting@6f204a1a]" started-at="2025-07-30T21:30:28 IST" name="Notification_Setting_Test" finished-at="2025-07-30T21:41:56 IST" duration-ms="687729" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="Notification_Setting_Test()[pri:0, instance:com.ellora.testCases.Notification_Setting@75db5df9]" started-at="2025-10-03T18:38:12 IST" name="Notification_Setting_Test" finished-at="2025-10-03T18:38:17 IST" duration-ms="4519" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[element click intercepted: Element <a href="javascript:void(0);" class="text-decoration-none" id="btn-edit-signature">...</a> is not clickable at point (375, 274). Other element would receive the click: <div class="d-flex h-100 justify-content-center align-items-center flex-column">...</div>
+              <![CDATA[element not interactable: https://ohsuat.ellorasystems.com/provider/settings/general has no size and location
   (Session info: chrome=136.0.7103.114)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [773e54e76f358e4e9fe5f0134c32d6e2, clickElement {id=f.6CE9B0D3D48495828449C81BFCE4E4B6.d.B0D51DF5ADC4A1D16C42E2DC6646EA14.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51707/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (773e54e76f358e4e9fe5f0134c32d6e2)] -> id: btn-edit-signature]
-Session ID: 773e54e76f358e4e9fe5f0134c32d6e2]]>
+Command: [8afa13539e109039a1596618ec38db87, actions {actions=[org.openqa.selenium.interactions.Sequence@7c7db0cd]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53575/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8afa13539e109039a1596618ec38db87]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="javascript:void(0);" class="text-decoration-none" id="btn-edit-signature">...</a> is not clickable at point (375, 274). Other element would receive the click: <div class="d-flex h-100 justify-content-center align-items-center flex-column">...</div>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable: https://ohsuat.ellorasystems.com/provider/settings/general has no size and location
   (Session info: chrome=136.0.7103.114)
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [773e54e76f358e4e9fe5f0134c32d6e2, clickElement {id=f.6CE9B0D3D48495828449C81BFCE4E4B6.d.B0D51DF5ADC4A1D16C42E2DC6646EA14.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51707/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (773e54e76f358e4e9fe5f0134c32d6e2)] -> id: btn-edit-signature]
-Session ID: 773e54e76f358e4e9fe5f0134c32d6e2
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [8afa13539e109039a1596618ec38db87, actions {actions=[org.openqa.selenium.interactions.Sequence@7c7db0cd]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53575/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8afa13539e109039a1596618ec38db87
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -253,20 +246,13 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at com.sun.proxy.$Proxy16.click(Unknown Source)
-at com.ellora.pageObjects.Provider_settings_page.GeneralSettingsTest(Provider_settings_page.java:87)
-at com.ellora.testCases.Notification_Setting.Notification_Setting_Test(Notification_Setting.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:605)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
+at org.openqa.selenium.interactions.Actions.perform(Actions.java:568)
+at com.ellora.pageObjects.Provider_settings_page.navigateToSettings(Provider_settings_page.java:72)
+at com.ellora.testCases.Notification_Setting.Notification_Setting_Test(Notification_Setting.java:20)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -275,60 +261,58 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Notification_Setting_Test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.Notification_Setting@6f204a1a]" started-at="2025-07-30T21:41:56 IST" name="tearDown" finished-at="2025-07-30T21:42:03 IST" duration-ms="6798" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.Notification_Setting@75db5df9]" started-at="2025-10-03T18:38:17 IST" name="tearDown" finished-at="2025-10-03T18:38:21 IST" duration-ms="3505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ellora.testCases.Notification_Setting -->
       <class name="com.ellora.testCases.BookAudioAppointmentTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.BookAudioAppointmentTest@7bd7d6d6]" started-at="2025-07-30T21:28:19 IST" name="setUp" finished-at="2025-07-30T21:28:32 IST" duration-ms="13009" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.BookAudioAppointmentTest@4961f6af]" started-at="2025-10-03T18:36:35 IST" name="setUp" finished-at="2025-10-03T18:36:44 IST" duration-ms="8759" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="bookAudioAppointmentTest()[pri:0, instance:com.ellora.testCases.BookAudioAppointmentTest@7bd7d6d6]" started-at="2025-07-30T21:28:32 IST" name="bookAudioAppointmentTest" finished-at="2025-07-30T21:28:56 IST" duration-ms="23798" status="FAIL">
+        <test-method signature="bookAudioAppointmentTest()[pri:0, instance:com.ellora.testCases.BookAudioAppointmentTest@4961f6af]" started-at="2025-10-03T18:36:44 IST" name="bookAudioAppointmentTest" finished-at="2025-10-03T18:36:56 IST" duration-ms="12124" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'AM')]"}
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#search_first_name"}
   (Session info: chrome=136.0.7103.114)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60ef6ccec6a56a54ee4a938d5ab0aa01, findElement {using=xpath, value=//div[contains(text(),'AM')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51518/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 60ef6ccec6a56a54ee4a938d5ab0aa01]]>
+Command: [4bdc1be9f25356c0787196ade02fb45b, findElement {value=search_first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53445/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bdc1be9f25356c0787196ade02fb45b]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'AM')]"}
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#search_first_name"}
   (Session info: chrome=136.0.7103.114)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60ef6ccec6a56a54ee4a938d5ab0aa01, findElement {using=xpath, value=//div[contains(text(),'AM')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51518/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 60ef6ccec6a56a54ee4a938d5ab0aa01
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [4bdc1be9f25356c0787196ade02fb45b, findElement {value=search_first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53445/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bdc1be9f25356c0787196ade02fb45b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -340,11 +324,9 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at com.ellora.testCases.BookAudioAppointmentTest.bookAudioAppointmentTest(BookAudioAppointmentTest.java:37)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at com.ellora.testCases.BookAudioAppointmentTest.bookAudioAppointmentTest(BookAudioAppointmentTest.java:28)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -353,74 +335,72 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- bookAudioAppointmentTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.BookAudioAppointmentTest@7bd7d6d6]" started-at="2025-07-30T21:28:56 IST" name="tearDown" finished-at="2025-07-30T21:29:03 IST" duration-ms="7001" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.BookAudioAppointmentTest@4961f6af]" started-at="2025-10-03T18:36:56 IST" name="tearDown" finished-at="2025-10-03T18:37:00 IST" duration-ms="3435" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ellora.testCases.BookAudioAppointmentTest -->
       <class name="com.ellora.testCases.Provider_Settings">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.Provider_Settings@239a307b]" started-at="2025-07-30T21:29:33 IST" name="setUp" finished-at="2025-07-30T21:29:44 IST" duration-ms="11641" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.Provider_Settings@65d09a04]" started-at="2025-10-03T18:37:27 IST" name="setUp" finished-at="2025-10-03T18:37:34 IST" duration-ms="7620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ProviderSetting()[pri:0, instance:com.ellora.testCases.Provider_Settings@239a307b]" started-at="2025-07-30T21:29:44 IST" name="ProviderSetting" finished-at="2025-07-30T21:29:45 IST" duration-ms="603" status="PASS">
+        <test-method signature="ProviderSetting()[pri:0, instance:com.ellora.testCases.Provider_Settings@65d09a04]" started-at="2025-10-03T18:37:34 IST" name="ProviderSetting" finished-at="2025-10-03T18:37:35 IST" duration-ms="416" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProviderSetting -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.Provider_Settings@239a307b]" started-at="2025-07-30T21:29:45 IST" name="tearDown" finished-at="2025-07-30T21:29:51 IST" duration-ms="6177" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.Provider_Settings@65d09a04]" started-at="2025-10-03T18:37:35 IST" name="tearDown" finished-at="2025-10-03T18:37:38 IST" duration-ms="3328" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ellora.testCases.Provider_Settings -->
       <class name="com.ellora.testCases.ProfileTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.ProfileTest@43f02ef2]" started-at="2025-07-30T21:29:03 IST" name="setUp" finished-at="2025-07-30T21:29:10 IST" duration-ms="6920" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ellora.testCases.ProfileTest@5aebe890]" started-at="2025-10-03T18:37:00 IST" name="setUp" finished-at="2025-10-03T18:37:10 IST" duration-ms="10446" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testUpdateProfileFields()[pri:0, instance:com.ellora.testCases.ProfileTest@43f02ef2]" started-at="2025-07-30T21:29:10 IST" name="testUpdateProfileFields" finished-at="2025-07-30T21:29:25 IST" duration-ms="14925" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="testUpdateProfileFields()[pri:0, instance:com.ellora.testCases.ProfileTest@5aebe890]" started-at="2025-10-03T18:37:10 IST" name="testUpdateProfileFields" finished-at="2025-10-03T18:37:23 IST" duration-ms="12616" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (68, 924)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#first_name"}
   (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5da5744de1da1dae400b271bd3982426, clickElement {id=f.4AFA468DFAD012620C002AF5AF68AB50.d.1F0AFACE8877926642191632A32A7737.e.95}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51566}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51566/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5da5744de1da1dae400b271bd3982426)] -> id: save_user_data_btn]
-Session ID: 5da5744de1da1dae400b271bd3982426]]>
+Command: [06f66e4ad3703384e7a69f3e2039c921, findElement {value=first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53477/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06f66e4ad3703384e7a69f3e2039c921]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (68, 924)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#first_name"}
   (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5da5744de1da1dae400b271bd3982426, clickElement {id=f.4AFA468DFAD012620C002AF5AF68AB50.d.1F0AFACE8877926642191632A32A7737.e.95}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51566}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51566/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5da5744de1da1dae400b271bd3982426)] -> id: save_user_data_btn]
-Session ID: 5da5744de1da1dae400b271bd3982426
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+Command: [06f66e4ad3703384e7a69f3e2039c921, findElement {value=first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53477/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06f66e4ad3703384e7a69f3e2039c921
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
 at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -428,14 +408,14 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at com.ellora.pageObjects.ProfilePage.clickSave(ProfilePage.java:127)
-at com.ellora.testCases.ProfileTest.testUpdateProfileFields(ProfileTest.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+at com.ellora.pageObjects.ProfilePage.setFirstName(ProfilePage.java:41)
+at com.ellora.testCases.ProfileTest.testUpdateProfileFields(ProfileTest.java:24)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
@@ -444,23 +424,23 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
 at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
 at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testUpdateProfileFields -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.ProfileTest@43f02ef2]" started-at="2025-07-30T21:29:26 IST" name="tearDown" finished-at="2025-07-30T21:29:33 IST" duration-ms="6223" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ellora.testCases.ProfileTest@5aebe890]" started-at="2025-10-03T18:37:23 IST" name="tearDown" finished-at="2025-10-03T18:37:27 IST" duration-ms="3359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -18,6 +18,8 @@ public class BookAudioAppointmentTest extends BaseClass {
 	    @Test
 	    public void bookAudioAppointmentTest() throws InterruptedException {
 			loginByKey("doctor");
+			
+			
 
 	        // Click on clients menu
 	    	  driver.findElement(DocumentUploadPage.CLIENTS_TAB).click();

@@ -32,17 +32,18 @@ public class BookInpersonAppt extends BaseClass {
 		QuickApptObjects quickApptObjects = new QuickApptObjects(driver);
 		
 		quickApptObjects.getUsersMenu().click();
+		
 		quickApptObjects.getFNameInput().sendKeys("jen" +Keys.ENTER);
         System.out.println("test");
     	
 		quickApptObjects.getQuickApptIcon().click();
 		wait.wait(2);
 		quickApptObjects.getInPersonApptButton().click();
-		((WebElement) quickApptObjects.confirmButton).click();
-		
+		//((WebElement) quickApptObjects.confirmButton).click();
+		quickApptObjects.getConfirmButton().click();
 		if(((WebElement) quickApptObjects.confirmModal).isDisplayed()) {
 			
-			//quickApptObjects.ButtonContinue().click();
+			quickApptObjects.getButtonContinue().click();
 		}
 		
 		 WebElement textElement = driver.findElement(By.xpath("//div[normalize-space()='Appointments']"));

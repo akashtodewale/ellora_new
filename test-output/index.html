@@ -160,23 +160,23 @@
           <div class="suite-FullSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.ellora.testCases.Notification_Setting</span>
+              <span class="class-name">com.ellora.testCases.DocumentUploadTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Notification_Setting_Test">
-                  </a> <!-- Notification_Setting_Test -->
-                  <span class="method-name">Notification_Setting_Test</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0);&quot; class=&quot;text-decoration-none&quot; id=&quot;btn-edit-signature&quot;&gt;...&lt;/a&gt; is not clickable at point (375, 274). Other element would receive the click: &lt;div class=&quot;d-flex h-100 justify-content-center align-items-center flex-column&quot;&gt;...&lt;/div&gt;
+                  <a name="documentUploadTest">
+                  </a> <!-- documentUploadTest -->
+                  <span class="method-name">documentUploadTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#search_first_name&quot;}
   (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [773e54e76f358e4e9fe5f0134c32d6e2, clickElement {id=f.6CE9B0D3D48495828449C81BFCE4E4B6.d.B0D51DF5ADC4A1D16C42E2DC6646EA14.e.72}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51707}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51707/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (773e54e76f358e4e9fe5f0134c32d6e2)] -&gt; id: btn-edit-signature]
-Session ID: 773e54e76f358e4e9fe5f0134c32d6e2
+Command: [fe324f2988e8b0fb498b5bca5c24a71a, findElement {value=search_first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53372/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe324f2988e8b0fb498b5bca5c24a71a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -184,60 +184,17 @@ Session ID: 773e54e76f358e4e9fe5f0134c32d6e2
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at com.sun.proxy.$Proxy16.click(Unknown Source)
-	at com.ellora.pageObjects.Provider_settings_page.GeneralSettingsTest(Provider_settings_page.java:87)
-	at com.ellora.testCases.Notification_Setting.Notification_Setting_Test(Notification_Setting.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FullSuite-class-failed -->
-          <div class="suite-FullSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ellora.testCases.ProfileTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testUpdateProfileFields">
-                  </a> <!-- testUpdateProfileFields -->
-                  <span class="method-name">testUpdateProfileFields</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (68, 924)
-  (Session info: chrome=136.0.7103.114)
-Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5da5744de1da1dae400b271bd3982426, clickElement {id=f.4AFA468DFAD012620C002AF5AF68AB50.d.1F0AFACE8877926642191632A32A7737.e.95}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51566}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51566/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (5da5744de1da1dae400b271bd3982426)] -&gt; id: save_user_data_btn]
-Session ID: 5da5744de1da1dae400b271bd3982426
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at com.ellora.pageObjects.ProfilePage.clickSave(ProfilePage.java:127)
-	at com.ellora.testCases.ProfileTest.testUpdateProfileFields(ProfileTest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.ellora.testCases.DocumentUploadTest.documentUploadTest(DocumentUploadTest.java:23)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -254,15 +211,46 @@ Session ID: 5da5744de1da1dae400b271bd3982426
                   <a name="bookInpersonAppt">
                   </a> <!-- bookInpersonAppt -->
                   <span class="method-name">bookInpersonAppt</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#user_fname&quot;}
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.By$ByClassName.&lt;init&gt;(By.java:309)
+	at org.openqa.selenium.By.className(By.java:100)
+	at com.ellora.pageObjects.QuickApptObjects.&lt;init&gt;(QuickApptObjects.java:19)
+	at com.ellora.testCases.BookInpersonAppt.bookInpersonAppt(BookInpersonAppt.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullSuite-class-failed -->
+          <div class="suite-FullSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ellora.testCases.BookAudioAppointmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bookAudioAppointmentTest">
+                  </a> <!-- bookAudioAppointmentTest -->
+                  <span class="method-name">bookAudioAppointmentTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#search_first_name&quot;}
   (Session info: chrome=136.0.7103.114)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3d2b0167976202883db1d81b836a4cd5, findElement {using=id, value=user_fname}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51652}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51652/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3d2b0167976202883db1d81b836a4cd5
+Command: [4bdc1be9f25356c0787196ade02fb45b, findElement {value=search_first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53445}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53445/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4bdc1be9f25356c0787196ade02fb45b
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -274,14 +262,57 @@ Session ID: 3d2b0167976202883db1d81b836a4cd5
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.ellora.pageObjects.QuickApptObjects.getFNameInput(QuickApptObjects.java:40)
-	at com.ellora.testCases.BookInpersonAppt.bookInpersonAppt(BookInpersonAppt.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames
+	at com.ellora.testCases.BookAudioAppointmentTest.bookAudioAppointmentTest(BookAudioAppointmentTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-FullSuite-class-failed -->
+          <div class="suite-FullSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ellora.testCases.ProfileTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testUpdateProfileFields">
+                  </a> <!-- testUpdateProfileFields -->
+                  <span class="method-name">testUpdateProfileFields</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#first_name&quot;}
+  (Session info: chrome=136.0.7103.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [06f66e4ad3703384e7a69f3e2039c921, findElement {value=first_name, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53477}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53477/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 06f66e4ad3703384e7a69f3e2039c921
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at com.ellora.pageObjects.ProfilePage.setFirstName(ProfilePage.java:41)
+	at com.ellora.testCases.ProfileTest.testUpdateProfileFields(ProfileTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -300,11 +331,11 @@ Session ID: 3d2b0167976202883db1d81b836a4cd5
                   <span class="method-name">testReportsGeneration</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: invalid session id
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5ffc99408190ffe751e0ed6b3b2f6cc1, findElement {using=xpath, value=//a[normalize-space()=&apos;Reports&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5ffc99408190ffe751e0ed6b3b2f6cc1
+Command: [fe324f2988e8b0fb498b5bca5c24a71a, findElement {value=//a[normalize-space()=&apos;Reports&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53372}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53372/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: fe324f2988e8b0fb498b5bca5c24a71a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -318,12 +349,12 @@ Session ID: 5ffc99408190ffe751e0ed6b3b2f6cc1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at com.ellora.pageObjects.ReportsPage.openReports(ReportsPage.java:42)
 	at com.ellora.testCases.ReportManage_appt_note.testReportsGeneration(ReportManage_appt_note.java:42)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -332,47 +363,22 @@ Session ID: 5ffc99408190ffe751e0ed6b3b2f6cc1
           <div class="suite-FullSuite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.ellora.testCases.DocumentUploadTest</span>
+              <span class="class-name">com.ellora.testCases.Notification_Setting</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="documentUploadTest">
-                  </a> <!-- documentUploadTest -->
-                  <span class="method-name">documentUploadTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: Document save failed! expected [true] but found [false]
-	at com.ellora.testCases.DocumentUploadTest.documentUploadTest(DocumentUploadTest.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 20 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-FullSuite-class-failed -->
-          <div class="suite-FullSuite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.ellora.testCases.BookAudioAppointmentTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="bookAudioAppointmentTest">
-                  </a> <!-- bookAudioAppointmentTest -->
-                  <span class="method-name">bookAudioAppointmentTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),&apos;AM&apos;)]&quot;}
+                  <a name="Notification_Setting_Test">
+                  </a> <!-- Notification_Setting_Test -->
+                  <span class="method-name">Notification_Setting_Test</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable: https://ohsuat.ellorasystems.com/provider/settings/general has no size and location
   (Session info: chrome=136.0.7103.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [60ef6ccec6a56a54ee4a938d5ab0aa01, findElement {using=xpath, value=//div[contains(text(),&apos;AM&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51518}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51518/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 60ef6ccec6a56a54ee4a938d5ab0aa01
+Command: [8afa13539e109039a1596618ec38db87, actions {actions=[org.openqa.selenium.interactions.Sequence@7c7db0cd]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53575}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53575/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8afa13539e109039a1596618ec38db87
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -380,17 +386,17 @@ Session ID: 60ef6ccec6a56a54ee4a938d5ab0aa01
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at com.ellora.testCases.BookAudioAppointmentTest.bookAudioAppointmentTest(BookAudioAppointmentTest.java:37)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-... Removed 22 stack frames
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:605)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:568)
+	at com.ellora.pageObjects.Provider_settings_page.navigateToSettings(Provider_settings_page.java:72)
+	at com.ellora.testCases.Notification_Setting.Notification_Setting_Test(Notification_Setting.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -420,12 +426,12 @@ Session ID: 60ef6ccec6a56a54ee4a938d5ab0aa01
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;FullSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;FullSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.ellora.testCases.Listners&quot;/&gt;
     &lt;listener class-name=&quot;Listeners.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;1&quot; parallel=&quot;tests&quot; name=&quot;Full Tests&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;Full Tests&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.ellora.testCases.DocumentUploadTest&quot;/&gt;
       &lt;class name=&quot;com.ellora.testCases.ReportManage_appt_note&quot;/&gt;
@@ -475,38 +481,38 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Notification_Setting_Test')
-data.setCell(0, 2, 'com.ellora.testCases.Notification_Setting')
-data.setCell(0, 3, 687729);
+data.setCell(0, 1, 'testUpdateProfileFields')
+data.setCell(0, 2, 'com.ellora.testCases.ProfileTest')
+data.setCell(0, 3, 12616);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'bookAudioAppointmentTest')
 data.setCell(1, 2, 'com.ellora.testCases.BookAudioAppointmentTest')
-data.setCell(1, 3, 23798);
+data.setCell(1, 3, 12124);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'documentUploadTest')
 data.setCell(2, 2, 'com.ellora.testCases.DocumentUploadTest')
-data.setCell(2, 3, 22264);
+data.setCell(2, 3, 11618);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'bookInpersonAppt')
 data.setCell(3, 2, 'com.ellora.testCases.BookInpersonAppt')
-data.setCell(3, 3, 20205);
+data.setCell(3, 3, 5848);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testUpdateProfileFields')
-data.setCell(4, 2, 'com.ellora.testCases.ProfileTest')
-data.setCell(4, 3, 14925);
+data.setCell(4, 1, 'Notification_Setting_Test')
+data.setCell(4, 2, 'com.ellora.testCases.Notification_Setting')
+data.setCell(4, 3, 4519);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testReportsGeneration')
 data.setCell(5, 2, 'com.ellora.testCases.ReportManage_appt_note')
-data.setCell(5, 3, 6383);
+data.setCell(5, 3, 4160);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'ProviderSetting')
 data.setCell(6, 2, 'com.ellora.testCases.Provider_Settings')
-data.setCell(6, 3, 603);
+data.setCell(6, 3, 416);
 window.suiteTableData['FullSuite']= { tableData: data, tableDiv: 'times-div-FullSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 14 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-FullSuite">
               </div> <!-- times-div-FullSuite -->
             </div> <!-- times-div -->
@@ -541,115 +547,115 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">documentUploadTest</span>
-                <span class="method-start">13083 ms</span>
+                <span class="method-start">9860 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">36256 ms</span>
+                <span class="method-start">21983 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ellora.testCases.ReportManage_appt_note</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpPageObjects</span>
-                <span class="method-start">42770 ms</span>
+                <span class="method-start">25362 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">42772 ms</span>
+                <span class="method-start">25364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testReportsGeneration</span>
-                <span class="method-start">55628 ms</span>
+                <span class="method-start">34405 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62575 ms</span>
+                <span class="method-start">39189 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ellora.testCases.BookAudioAppointmentTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">69563 ms</span>
+                <span class="method-start">42545 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">bookAudioAppointmentTest</span>
-                <span class="method-start">82572 ms</span>
+                <span class="method-start">51304 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">106892 ms</span>
+                <span class="method-start">64003 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ellora.testCases.ProfileTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">113901 ms</span>
+                <span class="method-start">67445 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testUpdateProfileFields</span>
-                <span class="method-start">120821 ms</span>
+                <span class="method-start">77891 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">136887 ms</span>
+                <span class="method-start">90974 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ellora.testCases.Provider_Settings</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">143112 ms</span>
+                <span class="method-start">94333 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">ProviderSetting</span>
-                <span class="method-start">154753 ms</span>
+                <span class="method-start">101953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">155358 ms</span>
+                <span class="method-start">102375 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ellora.testCases.BookInpersonAppt</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">161542 ms</span>
+                <span class="method-start">105705 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">bookInpersonAppt</span>
-                <span class="method-start">165573 ms</span>
+                <span class="method-start">120391 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">186773 ms</span>
+                <span class="method-start">126704 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ellora.testCases.Notification_Setting</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">193617 ms</span>
+                <span class="method-start">130216 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">Notification_Setting_Test</span>
-                <span class="method-start">198512 ms</span>
+                <span class="method-start">139709 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">886891 ms</span>
+                <span class="method-start">144684 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

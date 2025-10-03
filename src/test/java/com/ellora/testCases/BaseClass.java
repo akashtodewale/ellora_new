@@ -3,9 +3,11 @@ package com.ellora.testCases;
 import java.io.File;
 import java.io.FileInputStream;
 import java.time.Duration;
+
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -108,8 +110,11 @@ public class BaseClass {
 		public static  WebDriver getDriver() {
 		        return driver;
 		    }
+	
 		
-    @AfterMethod
+		
+		
+  @AfterMethod
 	    public void tearDown() {
         if (driver != null) {
         	try {
@@ -117,7 +122,7 @@ public class BaseClass {
 				Thread.sleep(3000);
 				driver.close();
 
-				Thread.sleep(3000);
+				//Thread.sleep(3000);
 
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
